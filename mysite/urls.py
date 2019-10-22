@@ -4,7 +4,7 @@ from myapp import views as appview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', appview.index),
+    path('', appview.test),
     path('index' , appview.index),
     path('test' , appview.test),
 ]
