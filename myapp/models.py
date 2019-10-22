@@ -1,11 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Entry(models.Model):
-    name = models.CharField(max_length=100)
-    date = models.DateTimeField()
-    description = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
+class Service(models.Model):
+    icon = models.CharField(max_length=200)
+    title = models.CharField(max_length=300)
+    detail = models.CharField(max_length=1000)
 
     def __str__(self):
-      return f'{self.name} {self.date}'
+        return self.title
