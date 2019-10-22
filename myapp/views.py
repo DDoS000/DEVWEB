@@ -21,3 +21,6 @@ def index(req):
         services = Service.objects.all()
         print(services)
         return render(req, 'myapp/index.html', { 'services': services })
+
+def test(req):
+    return render(req, 'myapp/test.html')
