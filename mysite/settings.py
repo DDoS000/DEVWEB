@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [u'DDoS000.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,5 +125,9 @@ STATIC_URL = '/static/'
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = u'/home/DDoS000/mysite/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = u'/home/DDoS000/mysite/static'
+# STATIC_ROOT = u'/homehome/DDoS000/mysite/static'
+# STATIC_ROOT = u'/mysite/static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
 STATIC_URL = '/static/'
